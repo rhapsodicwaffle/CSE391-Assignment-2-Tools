@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="stopwatch.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stopwatch</h1>
+        <p class="subtitle">Counts in multiples of 3 seconds</p>
+        
+        <div class="stopwatch-display">
+            <div id="display">00:00</div>
+        </div>
+        
+        <div class="controls">
+            <button class="btn start-btn" onclick="startTimer()">Start</button>
+            <button class="btn stop-btn" onclick="stopTimer()">Stop</button>
+            <button class="btn reset-btn" onclick="resetTimer()">Reset</button>
+        </div>
+        
+        <div class="info">
+            <p>Timer increments by 3 seconds</p>
+            <p>Automatically stops at 30 seconds</p>
+        </div>
+    </div>
+    
+    <script src="stopwatch.js"></script>
+</body>
+</html>
